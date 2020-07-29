@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ProfileComponent } from './profile/profile.component';
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule
   ],
   providers: [],
