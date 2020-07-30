@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterTestingModule } from '@angular/router/testing';
-import { Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 
@@ -13,8 +12,8 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterTestingModule.withRoutes(routes),
+    RouterModule.forRoot(routes),
   ],
-  exports: [RouterTestingModule]
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }
